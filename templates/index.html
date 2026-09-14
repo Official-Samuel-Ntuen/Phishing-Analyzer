@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Analyzer | DecodeLabs SOC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <span class="status-dot"></span>
+                <span class="status-text">SOC ANALYST TOOLKIT — LIVE</span>
+            </div>
+            <h1>🛡️ PHISHING TRIAGE ANALYZER</h1>
+            <p>DECODELABS CYBERSECURITY PROJECT 3</p>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="stat-number">80%</span>
+                <span class="stat-label">Breaches via Phishing</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">82s</span>
+                <span class="stat-label">Avg Time to First Click</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">11</span>
+                <span class="stat-label">Red Flags Monitored</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Threat Levels</span>
+            </div>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="grid">
+
+            <!-- Input Section -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-icon">📧</span>
+                    <h2>EMAIL TRIAGE INPUT</h2>
+                </div>
+
+                <label>SENDER EMAIL ADDRESS</label>
+                <input type="text" id="sender"
+                    placeholder="e.g. security@gmail.com">
+
+                <label>SUBJECT LINE</label>
+                <input type="text" id="subject"
+                    placeholder="e.g. URGENT: Your account suspended">
+
+                <label>EMAIL BODY</label>
+                <textarea id="body"
+                    placeholder="Paste the email body here..."></textarea>
+
+                <label>ATTACHMENTS (if any)</label>
+                <input type="text" id="attachments"
+                    placeholder="e.g. invoice.exe, document.zip">
+
+                <button class="btn-analyze" onclick="analyzeEmail()">
+                    🔍 RUN TRIAGE ANALYSIS
+                </button>
+
+                <button class="btn-clear" onclick="clearAll()">
+                    🗑️ CLEAR ALL
+                </button>
+            </div>
+
+            <!-- Results Section -->
+            <div class="card" id="resultsCard">
+                <div class="card-header">
+                    <span class="card-icon">📊</span>
+                    <h2>TRIAGE REPORT</h2>
+                </div>
+
+                <!-- Verdict Display -->
+                <div class="verdict-display" id="verdictDisplay">
+                    <div class="verdict-icon" id="verdictIcon">🛡️</div>
+                    <div class="verdict-text" id="verdictText">
+                        AWAITING ANALYSIS
+                    </div>
+                    <div class="verdict-action" id="verdictAction">
+                        Submit an email to begin triage
+                    </div>
+                </div>
+
+                <!-- Threat Score -->
+                <div class="score-section">
+                    <label>THREAT SCORE</label>
+                    <div class="score-bar-container">
+                        <div class="score-bar" id="scoreBar"></div>
+                    </div>
+                    <div class="score-numbers">
+                        <span id="scoreText">0</span>
+                        <span>/16</span>
+                    </div>
+                </div>
+
+                <!-- Red Flags -->
+                <div class="flags-section">
+                    <label>RED FLAGS DETECTED</label>
+                    <div id="flagsList">
+                        <p class="no-flags">No analysis run yet</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Red Flags Reference -->
+        <div class="card reference-card">
+            <div class="card-header">
+                <span class="card-icon">⚠️</span>
+                <h2>RED FLAGS REFERENCE GUIDE</h2>
+            </div>
+            <div class="reference-grid">
+                <div class="ref-item">
+                    <span class="ref-num">01</span>
+                    <span>Sender Domain Mismatch</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">02</span>
+                    <span>Urgency Triggers</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">03</span>
+                    <span>Sensitive Info Requests</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">04</span>
+                    <span>Dangerous Attachments</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">05</span>
+                    <span>Unencrypted HTTP Links</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">06</span>
+                    <span>Domain Spoofing</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">07</span>
+                    <span>Fake Forwarded Chains</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">08</span>
+                    <span>MFA Fatigue Attacks</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">09</span>
+                    <span>Callback Scams (TOAD)</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">10</span>
+                    <span>QR Code Phishing</span>
+                </div>
+                <div class="ref-item">
+                    <span class="ref-num">11</span>
+                    <span>Deepfake Meeting Fraud</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
