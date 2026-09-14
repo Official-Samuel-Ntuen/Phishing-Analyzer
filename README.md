@@ -140,7 +140,8 @@ http://127.0.0.1:5000
 
 ## 👨‍💻 Author
 
-**Samuel Ntuen**
+**Samuel M. Ntuen**
+
 Cybersecurity Intern | DecodeLabs Intern 2026
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/yourprofile)
