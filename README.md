@@ -7,7 +7,13 @@
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Skill](https://img.shields.io/badge/Skill-Cybersecurity-red)
+![Kali](https://img.shields.io/badge/Kali_Linux-v2026.1-purple)
+![Skill](https://img.shields.io/badge/Penetration_Testing-Skill-red)
+![GitHub](https://img.shields.io/badge/GitHub-Official--Samuel--Ntuen-black?logo=github)
+![Ethical](https://img.shields.io/badge/Ethical_Hacking-darkgreen)
+![Waqas](https://img.shields.io/badge/-Samuel_M._Ntuen-red)
 ---
 
 ## 🎯 About The Project
