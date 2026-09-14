@@ -141,7 +141,7 @@ http://127.0.0.1:5000
 ## 👨‍💻 Author
 
 **Samuel Ntuen**
-Junior Cybersecurity Analyst | DecodeLabs Intern 2026
+Cybersecurity Intern | DecodeLabs Intern 2026
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/yourprofile)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat-square&logo=github)](https://github.com/Official-Samuel-Ntuen)
@@ -156,7 +156,3 @@ This project is open source and available under the [MIT License](LICENSE).
 
 > *\"Technical firewalls cannot compensate for human error.\"* — DecodeLabs
 '''
-with open('README.md', 'w') as f:
-    f.write(content)
-print('README created!')
-"
